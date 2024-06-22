@@ -1,0 +1,17 @@
+{% extends "layout/base.html" %}
+{% load static %}
+{% block content %}
+<div class="divcontac">
+    <form class="formulario" action="{% url 'model' %}" method="post">
+        <div class="form-control">
+        {% csrf_token %}
+        {{ form.as_p }}  
+        </div>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#mimodal" target="_blank">Enviar</button>
+    </form>
+</div>
+{{ mensaje }}
+{% endblock content %}
+
+
+

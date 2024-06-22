@@ -1,0 +1,49 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <body>
+        {% block content %}
+            {% for presentacion in presentaciones %}
+                <secction class="containerpresent">
+                    <div class="Present">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-inner">
+                                {% for image in imgs %}
+                                    <div class="carousel-item {% if forloop.first %} active {% endif %}">
+                                        <img src="{{ image.imagen.url }}" class="d-block w-100 "  style=" border-radius: 100%;">
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <br>
+                        </div>
+                        <div class="text-container">
+                            <h2 class="title01">{{ presentacion.title }}</h2>
+                            <p class="title01">{{ presentacion.description }}</p>
+                            <p class="title01">{{ presentacion.sobre_mi }}</p>
+                            <div class="skill">
+                                <img class="redesS" src="{% static "img/html.jpg" %}">
+                                <img class="redesS" src="{% static "img/css.jpg" %}">
+                                <img class="redesS" src="{% static "img/js.jpg" %}">
+                                <img class="redesS" src="{% static "img/boostrap.jpg" %}">
+                                <img class="redesS" src="{% static "img/python.jpg" %}">
+                                <img class="redesS" src="{% static "img/dj.jpg" %}">
+                                <img class="redesS" src="{% static "img/git.jpg" %}">
+                            </div>
+                        </div>
+                    </div>
+                </secction>
+            {% endfor %}
+                <secction class="containerproyect">
+                    {% for projecto in projectos %}
+                        <article class="proyect"> 
+                            <a class="link5" href="{{ projecto.url }}" target="_blank">
+                            <h2 class="titlep">{{ projecto.title }}</h2>
+                            <p class="parrafo01">{{ projecto.description }}</p>
+                            <img class="img01" src="{{ projecto.image.url }}"/></a>
+                            </article>
+                    {% endfor %}
+                </secction>
+        {% endblock content %}
+    </body>
+</html>
