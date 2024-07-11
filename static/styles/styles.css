@@ -417,7 +417,6 @@ footer{
         width: 200px;
         height: 100px;
         padding: 6px;
-        margin-top: 120%;
     }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -426,10 +425,10 @@ footer{
         height: auto;
     }
     .proyect{
-        width: 65%;
+        width: 70%;
     }
     .proyect:hover{
-        width: 70%;
+        width: 73%;
     }
     .Present{
         flex-direction: column;
@@ -518,7 +517,7 @@ footer{
         width: 150px;
         height: 100px;
         padding: 6px;
-        margin-top: 120%;
+        
     }
     .containerpresent{
         margin-top: 20%;
@@ -621,7 +620,6 @@ footer{
         width: 150px;
         height: 100px;
         padding: 6px;
-        margin-top: 120%;
     }
     .containerpresent{
         margin-top: 20%;
