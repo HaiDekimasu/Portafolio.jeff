@@ -417,6 +417,7 @@ footer{
         width: 200px;
         height: 100px;
         padding: 6px;
+        margin-top: 4rem;
     }
 }
 @media (min-width: 480px) and (max-width: 768px) {
