@@ -319,7 +319,7 @@ footer{
 /* responsive_________________________________________________________________________________________*/
 @media (min-width: 992px) and (max-width: 1024px){
     .proyect{
-        margin: 3rem;
+        margin: rem;
     }
     .proyect:hover{
         width: 30%;
