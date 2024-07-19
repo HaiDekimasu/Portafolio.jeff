@@ -509,10 +509,10 @@ footer{
         height: auto;
     }
     .proyect {
-        width: 40%;
+        width: 70%;
     }
     .proyect:hover {
-        width: 50%;
+        width: 75%;
     }
     .img01{
         width: 150px;
