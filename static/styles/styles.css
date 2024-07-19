@@ -507,6 +507,7 @@ footer{
     .containerproyect {
         flex-direction: column;
         height: auto;
+        margin-bottom: 20%;
     }
     .proyect {
         width: 70%;
