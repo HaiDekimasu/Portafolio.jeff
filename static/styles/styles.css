@@ -543,6 +543,9 @@ footer{
         padding: 3%;
         text-align: justify;
     }
+    .titlep {
+        margin-bottom: 10%;
+    }
     .text-container {
         width: 100vw;
         height: 50vh;
